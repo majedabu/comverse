@@ -1,13 +1,72 @@
 #section-main {
     background-image: url("img/slide-bg-complexity.jpg");
-    background-size: 70%;
+    background-size: 150%;
 
 }
 
-.main-nav a {
-    color: black;
-    width: 150px;
-    left: 100px;
-    border: 3px solid #73AD21;
 
+ul.menu li {
+    display: inline;
 }
+
+ul.menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+    float: left;
+}
+ul.menu {
+    padding: 20;
+}
+
+
+.one{
+
+  position: relative;
+
+    border-style: solid;
+    border-width: 5px;
+    background-color: orange;
+
+  width: 20%;
+  padding: .5rem 2%;
+   margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    float: left;}
+}
+.tow{
+ float: left;
+  position: relative;
+
+    border-style: solid;
+    border-width: 5px;
+    background-color: orange;
+
+  width: 100%;
+  padding: .5rem 2%;
+   margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;}
+}
+
+.three{
+
+  position: relative;
+float: left;
+    border-style: solid;
+    border-width: 5px;
+    background-color: orange;
+
+  width: 100%;
+  padding: .5rem 2%;
+   margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;}
+}
+
