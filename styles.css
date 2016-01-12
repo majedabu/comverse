@@ -1,24 +1,67 @@
-#section-main {
-    background-image: url("img/slide-bg-complexity.jpg");
-    background-size: 150%;
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
 }
 
+.container {
+ width: 940px;
+ margin: 0 auto;
 
+}
+h2,h3{
+   font-weight: normal;
+}
+
+.u-bold{
+     font-weight: bold;
+
+}
+#section-main {
+    background: url("img/slide-bg-complexity.jpg") center center fixed no-repeat;
+    height: 500px;
+    background-size:  cover;
+    width: 100%
+    overflow: hidden;
+    color:white;
+
+}
+#section-main h2{
+
+padding-top: 30px;
+}
+
+header img{
+float: left;
+
+}
+header{
+
+    padding: 7px;
+
+}
 ul.menu li {
     display: inline;
 }
 
 ul.menu li a {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    padding: 20px 20px;
+      padding-top: 35px;
     text-decoration: none;
     border-radius: 4px 4px 0 0;
     float: left;
+
+}
+ul.menu li + li {
+
+  background-image: url("img/search_line_divider.png");
+  background-size: 10px;
 }
 ul.menu {
-    padding: 20;
+    padding-top: 10px;
 }
 
 
@@ -34,39 +77,51 @@ ul.menu {
   padding: .5rem 2%;
    margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     float: left;}
-}
+
 .tow{
- float: left;
+
   position: relative;
 
     border-style: solid;
     border-width: 5px;
     background-color: orange;
 
-  width: 100%;
+  width: 20%;
   padding: .5rem 2%;
-   margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;}
-}
-
+   margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;}
 .three{
 
   position: relative;
-float: left;
+
     border-style: solid;
     border-width: 5px;
     background-color: orange;
 
-  width: 100%;
+  width: 20%;
   padding: .5rem 2%;
-   margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;}
-}
+   margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;}
 
+
+section#solution{
+    background: url("img/services-bg.png")  fixed no-repeat;
+    height: 400px;
+    background-size:  cover;
+    width: 100%
+    overflow: hidden;
+
+    text-align: center;
+    color: white;
+
+
+}
