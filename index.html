@@ -3,6 +3,7 @@
 <head>
 	<title>Comverse</title>			
     <link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> 
 	<meta charset="UTF-8">
 	<meta name="majed" content="Comverse Web">
 </head> 
@@ -15,31 +16,35 @@
 	    <img src="img/comverse-logo.png" alt="Comverse Logo"/>
 	    </a>
 	    
-    <nav>  
+	<nav id="main-nav">
      <ul class="menu">
-           <li><a href="#"> Your Needs</a></li>
-           <li><a href="#">Our Portfolio</a></li>
-           <li><a href="#">News &amp; Media </a></li>
-           <li><a href="#"> About Comverse</a></li>
+           <li><a href="#"> YOUR NEEDS</a></li>
+           <li><a href="#">OUR PORTFOLIO</a></li>
+           <li><a href="#">NEWS &AMP; MEDIA </a></li>
+           <li><a href="#"> ABOUT COMVERSE</a></li>
     </ul> 
       </nav>
  
-        <div class="right box"> 
-        <label for="lang-sel">Language</label>
+			<div class="right-box" > 
+				<div class="login-link" style="float: right">
+					<a href="#" >Customer Login</a>
+				</div>
+				<label for="lang-sel"></label>
 
-	    <div class="languge-select">
-        
-        <select name="language" id="lang-sel" >
-       
-           <option value="English">En</option>
-           <option value="Hebrow">He</option>
-           <option value="Arabic">Ar</option>
+				<div class="languge-select" style="float: right">
 
-        </select>
-      </div>
-      	<a href="#" id="login-link">Customer Login</a>
-      </div>
-      <div>
+					<select name="language" id="lang-sel" >
+
+						<option value="English">En</option>
+						<option value="Hebrow">He</option>
+						<option value="Arabic">Ar</option>
+
+					</select>
+				</div>
+
+			</div>
+
+      <div class="text-search">
           <from >
               <input type="text" name="search">
               <a href="#" id="search-link">
@@ -61,7 +66,9 @@
 					<h3><span class="u-bold">1st</span> Ever Marketing-Oriented Policy Tool</h3>
 
 				</div>
-				<a href="#" class="button-link">Learn More</a>
+				<a href="#" class="button-link">Learn More
+            <img src="img/btnArrow.png">
+            </a>
 				<div class="carousel-nav">
 					<input type="radio" id="nav-radio-1" name="nav-radios" value="1"checked="checked"></radio>
 					<input type="radio" id="nav-radio-2" name="nav-radios" value="2"></radio>
@@ -107,15 +114,52 @@
      <section id="solution">   
         <div class="container">
          <h1> WHAT CAN WE DO FOR YOU?</h1>
-
-
-
-
-
+          
+          <ul class="list-sol">
+				<li class="obj-sol">
+					<img src="./img/solution_icon_biz-analitics.png" class="outside" alt="Data monetization">
+					<img src="./img/solution_icon_biz-analitics_hover.png"  class="inside" alt="Data monetization" />
+					<div class="image-label">Data monetization<br><br></div>
+				</li>
+				<li class="obj-sol">
+					<img src="./img/solution_icon_diti-cx.png" class="outside" alt="Machine to machine (M2M)" />
+					<img src="./img/solution_icon_diti-cx_hover.png" class="inside" alt="Machine to machine (M2M)" />
+					<div class="image-label">Machine to machine<br>(M2M)</div>
+				</li>
+				<li class="obj-sol">
+					<img src="./img/solution_icon_optimize-efficnt.png" class="outside" alt="Over-the-top (OTT)" />
+					<img src="./img/solution_icon_optimize-efficnt_hover.png" class="inside" alt="Over-the-top (OTT)" />
+					<div class="image-label">Over-the-top<br>(OTT)</div>
+				</li>
+				<li class="obj-sol">
+					<img src="./img/solution_icon_biz-transform.png" class="outside" alt="Cloud computing" />
+					<img src="./img/solution_icon_biz-transform_hover.png" class="inside" alt="Cloud computing" />
+					<div class="image-label">Cloud computing<br><br></div>
+				</li>
+				<li class="obj-sol">
+					<img src="./img/solution_icon_personal.png" class="outside" alt="Managed Services" />
+					<img src="./img/solution_icon_personal_hover.png" class="inside" alt="Managed Services" />
+					<div class="image-label">Managed Services<br><br></div>
+				</li>
+				<li class="obj-sol">
+					<img src="./img/solution_icon_smart-money.png" class="outside" alt="Social Media" />
+					<img src="./img/solution_icon_smart-money_hover.png" class="inside" alt="Social Media" />
+					<div class="image-label">Social Media<br><br></div>
+				</li>
+			</ul>
+			<a href="#" class="button-link">See all of our solutions&nbsp;&nbsp;
+            <img src="img/btnArrow.png">
+			</a>
         </div>
      </section>
+     <section id="section-content">
+         <div class="container">
 
+			<h1>What's Happening At Comverse?</h1>
+			
+			</div>
+		</section>
 
 
 </body>
-</html>
+</html
