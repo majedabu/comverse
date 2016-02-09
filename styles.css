@@ -21,6 +21,14 @@ h2,h3{
      font-weight: bold;
 
 }
+
+select#lang-sel{
+  font-size: 15px;
+border: none;
+width: 50px;
+color: #585951;
+}
+
 #section-main {
     background: url("img/slide-bg-complexity.jpg") center center fixed no-repeat;
     height: 600px;
@@ -70,9 +78,10 @@ float: left;
 
 }
 header{
-
-    padding-bottom: 70px;
+    box-shadow: 0 1px 3px 0 grey;
+    padding-bottom: 80px;
     padding-top: 10px;
+    display: block;
 
 }
 ul.menu li {
@@ -80,6 +89,7 @@ ul.menu li {
     padding-top: 30px;
 }
 nav{
+  padding-left: 10px;
   padding-top: 35px;
   position: static;
 display: inline-block;
@@ -89,15 +99,15 @@ float: left;
 ul.menu li a {
    
     background-color: white;
-    color: black;
+    text-decoration: none;
+    color: #585951;
     padding-left:  8px;
     padding-right:  7px;
     padding-top: 35px;
     text-decoration: none;
+    font-size: 14px;
     border-radius: 4px 4px 0 0;
     float: left;
-    background: url("img/divider.png");
-    background-repeat: no-repeat;
     background-position: left;
     padding: 0 10px;
 }
@@ -129,10 +139,9 @@ display: inline-block;
   height: 180px;
 
     border-width: 5px;
-    background-color: pink;
-    border-radius: 10px;
+background-color: #FE3094;  
   width: 240px;
-    opacity: 0.7;
+    opacity: 0.92;
 
   padding: .5rem 2%;
    margin-top: 40px;
@@ -159,9 +168,9 @@ display: inline-block;
     border-radius: 10px;
 
     border-width: 5px;
-    background-color: orange;
+    background-color:#6DBB44;
   height: 180px;
-  opacity: 0.7;
+  opacity: 0.92;
   width: 240px;
   padding: .5rem 2%;
    margin-top: 40px;
@@ -173,10 +182,10 @@ display: inline-block;
 
   position: relative;
     border-radius: 10px;
-  opacity: 0.7;
+  opacity: 0.92;
 
     border-width: 5px;
-    background-color: yellow;
+    background-color: #FC6001;
   height: 180px;
   width: 240px;
   padding: .5rem 2%;
@@ -198,14 +207,26 @@ section#solution{
 
 
 }
+a{
 
+  text-decoration: none;
+}
 .right-box{
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-left: 30px
   float: left;
 }
 
 .login-link{
-  float: left;
+
+  padding-left: 12px;
+  float: right;
+}
+.login-link a{
+
+  color: #585951;
+
+  text-decoration: none;
 }
 
 
@@ -244,15 +265,16 @@ display: inline-block;
 margin-top: 40px;
 display: inline-block;
 border-radius: 7px;
-background-color: blue;
+background: linear-gradient(to top, #1188C4, #1D8EC6, #2B94C9);
+background-image: linear-gradient(to top, rgb(17, 136, 196), rgb(29, 142, 198), rgb(43, 148, 201));
 color: white;
 text-decoration: none;
-padding: 10px 8px;
+padding: 8px 8px;
 
 }
 
 #section-main .button-link img {
- padding-left:45px; 
+ padding-left:55px; 
 
 }
 
