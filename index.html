@@ -32,6 +32,9 @@
 				<div class="login-link" style="float: right">
 					<a href="#" >Customer Login</a>
 				</div>
+
+				<img src="img/divider.png" id="divider">
+
 				<label for="lang-sel"></label>
 
 				<div class="languge-select" style="float: right">
@@ -40,24 +43,26 @@
 
 						<option value="English">En</option>
 						<option value="Hebrow">He</option>
-						<option value="Arabic">Ar</option>
+						<option value="Arabic">ع</option>
 
 					</select>
 
 				</div>
-                <img src="img/divider.png" id="divider">
 
 
 			</div>
 
-      <div class="text-search">
-          <from >
-              <input type="text" name="search">
-              <a href="#" id="search-link">
-              <img src="img/searchBtn.png" alt="Search Button">
-              </a>
-           </from>
-      </div>
+
+			<form class="search-form" method="GET" action="http://www.google.com/search">
+				<label class="hidden" for="search-textbox">search</label>
+				<input class="search-box" type="text" id="search-textbox">
+				<img src="img/divider.png" alt="divider">
+				<button type="submit">
+					<img src="img/searchBtn.png" alt="search button">
+				</button>
+			</form>
+
+
       </div>
       </header>
       <section  id= "first">
@@ -75,44 +80,50 @@
 				<a href="#" class="button-link">LEARM MORE
             <img src="img/btnArrow.png">
             </a>
-				<div class="carousel-nav">
-					<input type="radio" id="nav-radio-1" name="nav-radios" value="1"checked="checked"></radio>
-					<input type="radio" id="nav-radio-2" name="nav-radios" value="2"></radio>
-					<input type="radio" id="nav-radio-3" name="nav-radios" value="3"></radio>
-					<input type="radio" id="nav-radio-4" name="nav-radios" value="4"></radio>
-				</div>
-				<div class="msh haha">
-				<div class="one">
+
+            <div class="blue-tab">
+					<ol class="carousel-nav"> 
+					<a href="#">
+						<li class="active"> <span class="hidden">1</span> </li>
+					</a>
+					<a href="#">
+						<li class="notactive"><span class="hidden">2</span></li>
+					</a>
+					<a href="#">
+						<li class="notactive"><span class="hidden">3</span></li>
+					</a>
+					<a href="#">
+						<li class="notactive"><span class="hidden">4</span></li>
+					</a>
+				</ol>
+
+               </div>
+
+
+				<div class="box-main" id="first-box-main">
 
 		           <h3>
 		           	Comverse Is Value-Added Service Global Market Leader.
 		           </h3>
 		           <a href="#">
-						<i class="fa fa"></i>
-						Read More
-					</a>
+			          	<img id="link-icon" src="img/link-icon-image.png" alt="Read more icon">Read more</a>
                    </div>
-                   <div class="tow">
+                   <div class="box-main" id="second-box-main">
 		           <h3>
                      Managed Services World Congress September 18-19 Berlin, Germany		           	
 		           </h3>
                     <a href="#">
-						<i class="fa fa"></i>
-						Read More
-					</a>
+	                    <img id="text-icon" src="img/file-icon.png" alt="Read text icon">Read more</a>
 					</div>
-				   <div class="three">
+				   <div class="box-main" id="third-box-main">
 
                    <h3>
                     Comverse: Enabling a world of Connected Possibilities.		           	
 		           </h3>
-                    <a href="#">
-						<i class="fa fa"></i>
-						Watch Me
-					</a>
+                   <a href="#">
+                       <img id="play-icon" src="img/play-icon.png" alt="Watch now icon">Watch now</a>
 					</div>
 				</div>
-			</div>
 	    </main>
      </div>
 
@@ -159,12 +170,99 @@
         </div>
      </section>
      <section id="section-content">
-         <div class="container">
-
+         <div  id="eventAdress">
 			<h1>What's Happening At Comverse?</h1>
-			
-			</div>
-		</section>
+
+
+			<ul class="events-list">
+				<li>
+                    <a href="#">
+                        <section itemscope="" itemtype="http://schema.org/Event">
+                            <h2 class="event-header">News</h2>
+                            <article>
+                                 <div class="dateEvent">
+                                <h1 class="event-date"><meta itemprop="doorTime" content="2015-09-04"><span class="day-container">04</span> <span class="month-container">SEP</span></h1>
+                                </div>
+                                <p itemprop="description">Comverse Regains Lead in Convergent Charging Markets Regains Lead in</p>
+                            </article>
+                        </section>
+                    </a>
+                    <a class="all-link all-news-link" href="#">
+                    	<span class="all-news-events">All news</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <section itemscope="" itemtype="http://schema.org/Event">
+                            <h2 class="event-header">Events</h2>
+                            <article>
+                                 <div class="dateEvent">
+                                <h1 class="event-date"><meta itemprop="doorTime" content="2015-09-04"><span class="day-container">04</span> <span class="month-container">SEP</span></h1></div>
+                                <p itemprop="description">Comverse Regains Lead in Convergent Charging Markets Regains Lead in</p>
+                            </article>
+                        </section>
+                    </a>
+                    <a href="#" class="all-link all-events-link">
+                    	<span class="all-news-events all-events-txt">All Events</span>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#">
+                        <section itemscope="" itemtype="http://schema.org/Event">
+                            <article>
+                               <div class="dateEvent">
+                                <h1 class="event-date"><meta itemprop="doorTime" content="2015-09-04"><span class="day-container">04</span> <span class="month-container">SEP</span></h1></div>
+                                <p itemprop="description">Comverse Regains Lead in Convergent Charging Markets Regains Lead in</p>
+                            </article>
+                        </section>
+                    </a>
+                    <a href="#" class="all-link all-events-link">
+                    	<span class="all-news-events all-events-txt">All Events</span>
+                    </a>
+                </li>
+			</ul>
+
+		</div>
+	</section>
+
+	<section class="success-stories-section">
+	 	<div class="wrapper">
+	 	<h1 class="succStory">SUCCESS STORIES</h1>
+	 	<ul class="success-stories-list">
+	 		<li class="success-stories-left">
+	 			<blockquote class="success-stories-blockquote">
+	 				<img class="person-img" src="img/person2.png" alt="person">
+	 				<p>
+	 					<img class="quote" src="img/quote-grey.png" alt="quote">
+	 					we have very good and very warm relations with Comverse. We always achievet..."
+	 				</p>
+	 				<div class="per-details">
+	 					<p><a href="#">SERGEY KOROTYCH</a></p>
+	 					<p>Deputy CTO, 3 Mob Ukraine</p>
+	 				</div>
+	 				<div class="per-logo">
+	 					<img src="img/3mob_w108px_X_h95px.jpg" alt="3 mob">
+	 				</div>
+	 			</blockquote>
+	 			<div class="companies">
+	 				<div class="company-logo">
+	 					<img src="img/cycle30.png" alt="cycle30">
+	 				</div>
+	 				<div class="company-logo">
+	 					<img src="img/bull.png" alt="bull">
+	 				</div>
+	 				<div class="company-logo">
+	 					<img src="img/gemplus.png" alt="gemplus">
+	 				</div>
+	 			</div>
+	 		</li>
+	 		
+	 	</ul>
+	 	<!-- here contunie -->
+	 	</div>
+	 </section>
 
 
 </body>
