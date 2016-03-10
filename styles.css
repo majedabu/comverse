@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+ font-family: 'Open Sans', sans-serif;
 }
 body {
 font-family: 'Open Sans', sans-serif;
@@ -78,7 +78,6 @@ display: none ;
 border: none;
 border-radius: 7px;
 margin: 0;
-height: 20px;
 display: inline-block;
 position: relative;
 outline: none; 
@@ -190,13 +189,17 @@ font-size: 15px;
   height: 180px;
   border-width: 5px;
   width: 240px;
-  opacity: 0.92;
+  opacity: 0.86;
   padding: .5rem 2%;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-right: 25px;
+  margin-right: 30px;
+  cursor: pointer;
   float: left;}
+.box-main:hover{
 
+  opacity: 1;
+}
 
 #first-box-main {
   background-color: #FE3094;  
@@ -360,7 +363,7 @@ margin: 0 auto;
 .events-list {
 padding-top: 40px;
 margin: 0 auto;
-margin-left: -12px;
+margin-left: -38px;
 }
 .events-list > li > a > section > article:hover {
 background-color: white;
@@ -377,6 +380,9 @@ border-radius: 3px;
 background-color: rgba(255, 255, 255, 0.3);
 padding: 10px;
 margin-bottom: 10px;
+text-align: left;
+
+
 }
 
 h1.event-date {
@@ -395,6 +401,7 @@ border-bottom: 1px dashed #FFF;
 border-top-right-radius: 3px;
 border-top-left-radius: 3px;
 width: 62px;
+height: 60px;
 }
 
 span.month-container {
@@ -407,7 +414,7 @@ width: 62px;
 }
 
 .events-list > li > a > section > article > p {
-margin-top: 16px;
+margin-bottom: 36px;
 color: black;
 padding-left: 60px;
 }
@@ -456,88 +463,204 @@ margin-left: -176px;
 
 /*----------------------------------- Succsess Stoireds---------------------------------*/
 
-.success-stories-section {
-background-color: #ECECEC;
-width: 100%;
-height: 500px;
-text-align: center;
-background-size: cover;
+
+
+
+
+
+/*----------------------------------- FOOTER--------------------------------------------*/
+
+footer {
+height: 350px;
+background-color: #1E1E1E;
 }
 .wrapper {
 width: 940px;
 margin: 0 auto;
 height: 100%;
 }
-.success-stories-section > div > h1 {
-  font-size: 45px;
-color: #565656;
-padding-bottom: 0;
-font-weight: 120px;
-padding-top: 30px;
-padding-bottom: 40px;
-}
-.success-stories-section > div > ul {
+.f-links {
 float: left;
-padding: 0;
+margin-right: 25px;
+line-height: 22px;
 }
-
-ul {
+.f-header {
+font-size: 16px;
+color: white;
+font-weight: 80;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.f-links > ul {
+display: block;
+padding: 0;
+float: none;
 list-style-type: none;
 }
-
-.success-stories-list > li {
-display: inline-block;
-width: 38%;
-float: left;
-margin: 4px;
-padding: 2px;
+.f-links > ul > li > a {
+color: white;
 font-size: 12px;
 }
+.f-links > ul > li > a:hover {
+text-decoration: underline;
+}
 
-blockquote {
-background-color: white;
-height: 180px;
-}
-.person-img {
-float: left;
-padding: 10px;
-height: 100px;
-width: 100px;
-}
-.quote {
-float: left;
-padding: 5px;
-height: 20px;
-width: 27px;
-padding-top: 0;
-}
-.per-details {
-text-align: left;
-padding-left: 10px;
-display: inline-block;
-float: left;
-}
-.per-details > p > a {
-color: #50AED0;
-}
-.per-details > p {
-padding: 2px;
-}
-.per-logo {
+
+.f-box {
 float: right;
+background-color: #3d3d3d;
+width: 265px;
+position: relative;
+height: 350px;
+margin-right: 30px;
+padding: 0px 10px;
+}
+.blog-posts-last {
+border-bottom: 1px solid #6A6A6A;
+}
+h3.f-box-header {
+color: #4EA7D3;
+text-align: center;
+font-weight: bold;
+font-size: 17px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.blog-posts-last-content {
+color: white;
+}
+.f-date {
+width: 60px;
+height: 80px;
+padding: 2px;
+float: left;
+font-weight: 100;
+margin: 0 10px 0 5px;
+}
+.f-day {
+font-size: 2.6rem;
+margin: 0;
+text-align: center;
+line-height: 2.2rem;
+font-weight: 400;
+font-weight: 100;
+}
+.f-month {
+font-size: 1.4rem;
+margin-left: 6px;
+font-weight: 100;
+text-align: center;
 }
 
-.person-img {
-float: left;
-padding: 10px;
-height: 100px;
-width: 100px;
+.blog-posts-last-text {
+margin: 0 8px;
+padding: 1px 5px;
+font-size: 1rem;
+font-weight: 100;
 }
-blockquote > p {
-font-size: 15px;
-height: 90px;
-padding: 15px;
-border-bottom: 1px solid #DDDDDD;
-color: #565656;
-text-align: left;
+.blog-posts-last-text > p {
+margin: 0 0 18px 0;
+line-height: 20px;
+font-weight: 100;
+}
+
+.signup {
+position: absolute;
+cursor: pointer;
+font-weight: 100;
+background: #2290C8;
+border-radius: 3px;
+border: none;
+color: white;
+line-height: 2.4em;
+margin-left: -8px;
+padding: 2px 6px;
+}
+.email {
+width: 170px;
+line-height: 2.5em;
+border-radius: 3px;
+border: none;
+margin: 0 5px;
+padding-left: 8px;
+color: gray;
+outline: none;
+padding-right: 8px;
+font-weight: 100;
+height: 36px;
+}
+
+.social-icons {
+position: absolute;
+bottom: 0;
+padding-bottom: 10px;
+padding-left:9px;
+}
+
+#youtube {
+background: url("img/socialMenuIcon-youtube.png") no-repeat;
+}
+#twitter {
+background: url("img/socialMenuIcon-twitter.png") no-repeat;
+}
+#linkedin {
+background: url("img/socialMenuIcon-linkdin.png") no-repeat;
+}
+.icon{
+width: 28px;
+height: 22px;
+content: "";
+display: inline-block;
+}
+
+.f-nav {
+margin-right: 0px;
+font-size: 14px;
+width: 401px;
+height: 20px;
+float: left;
+margin-top: 58px;
+display: inline-block;
+}
+
+.f-nav-list {
+float: none;
+margin: 0px;
+padding: 0px;
+}
+
+.f-nav-list> ul {
+display: inline-flex;
+list-style-type: none;
+float: right;
+padding: 0px;
+}
+
+.f-nav-list > li, .f-nav-list > li > a {
+color: gray;
+}
+.foter-bottom {
+margin-right: 0px;
+font-size: 14px;
+width: 676px;
+height: 20px;
+float: left;
+margin-top: -22px;
+display: inline-block;
+}
+ul.f-menu {
+margin: 0px;
+padding: 0px;
+margin-left: -5px;
+}
+.f-menu > li {
+list-style: none;
+margin: 0px;
+display: inline-block;
+color: grey;
+}
+.f-menu > li> a {
+color: grey;
+text-decoration: none;
+
 }
