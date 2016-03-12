@@ -302,7 +302,7 @@ background-image: linear-gradient(to top, rgb(17, 136, 196), rgb(29, 142, 198), 
 color: white;
 text-decoration: none;
 padding: 8px 8px;
-
+max-width: 12em;
 }
 
 #section-main .button-link img {
@@ -348,6 +348,7 @@ color: #fff;
 
 #eventAdress{
   padding-top: 30px;
+  float: center;
 }
 .section-container {
 max-width: 940px;
@@ -462,11 +463,233 @@ margin-left: -176px;
 
 
 /*----------------------------------- Succsess Stoireds---------------------------------*/
+.Section--success h2 {
+color: #565656;
+font-size: 2rem;
+text-transform: uppercase;
+text-align: center;
+padding-top: 30px;
+padding-bottom:20px; 
+}
 
+.Section--success {
+background-color: #E0E0E0;
+}
 
+.Section-content {
+width: 100%;
+max-width: 940px;
+margin: 0 auto;
+}
 
+.SuccessGrid{margin:0 auto;max-width:450px;}
+@media (min-width:680px){.SuccessGrid{max-width:2040px;}}
 
+.Section--success .SuccessColumn, .Section--success .SuccessColumn--narrow {
+width: 100%;
+float: left;
+}
 
+@media (min-width:680px){.Section--success .SuccessColumn, .Section--success .SuccessColumn--narrow {
+width: 37.5%;
+}}
+.Section--success .SuccessColumn--narrow {
+width: 25%;
+}
+
+.Section--success .SuccessColumn .SuccessQuote, .Section--success .SuccessColumn--narrow .SuccessQuote {
+width: 100%;
+box-sizing: border-box;
+}
+.SuccessQuote {
+width: 20rem;
+color: #565656;
+}
+.SuccessQuote:hover .SuccessBox-layerTop, .SuccessIcon:hover .SuccessBox-layerTop {
+transform: translateY(-150%);
+}
+
+.SuccessQuote, .SuccessIcon {
+display: block;
+padding: 0.2rem;
+position: relative;
+overflow: hidden;
+background-color: #3399CC;
+background-clip: content-box;
+}
+.SuccessQuote .SuccessBox-layerTop, .SuccessIcon .SuccessBox-layerTop {
+padding: 0.5rem;
+box-sizing: border-box;
+position: relative;
+z-index: 1;
+overflow: hidden;
+background-color: white;
+transition: transform 1.3s ease-out;
+}
+
+.SuccessQuote-top {
+height: 7rem;
+text-overflow: ellipsis;
+overflow: hidden;
+position: relative;
+}
+@media (min-width: 680px){
+.SuccessQuote-top {
+height: 5.9rem;
+}
+.SuccessQuote-top q::after {
+content: "...";
+position: absolute;
+bottom: -.2rem;
+right: .2rem;
+}
+}
+
+.SuccessQuote hr {
+margin-top: 10px;
+margin-bottom: 20px;
+
+border-style: solid;
+border-color: #E2E2E2;
+border-bottom: none;
+}
+
+.SuccessQuote img {
+width: 100%;
+}
+.SuccessQuote-top img {
+width: 30%;
+box-sizing: border-box;
+padding-right: .5rem;
+}
+.SuccessQuote-top q {
+width: 70%;
+float: right;
+}
+
+.SuccessQuote .SuccessBox-layerTop q::before {
+content: url("img/quote-grey.png");
+margin-right: .3rem;
+}
+
+.SuccessQuote-bottom .SuccessQuote-quoteeInfo {
+width: 80%;
+float: left;
+}
+.SuccessQuote-bottom .SuccessQuote-quoteeInfo p:first-child {
+text-transform: uppercase;
+color: #4DA6D2;
+}
+.SuccessQuote-bottom .SuccessQuote-quoteeInfo p {
+margin: 0;
+font-size: .75rem;
+}
+element.style {
+}
+
+.SuccessQuote-bottom img {
+width: 20%;
+float: right;
+}
+
+.u-grayscale {
+filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id…0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: gray;
+ -webkit-filter: grayscale(100%);
+}
+.SuccessQuote .SuccessBox-layerBottom {
+color: white;
+}
+.SuccessQuote .SuccessBox-layerBottom, .SuccessIcon .SuccessBox-layerBottom {
+padding: 0.5rem;
+box-sizing: border-box;
+z-index: 0;
+overflow: hidden;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+.SuccessQuote .SuccessBox-layerBottom q::before {
+content: '';
+}
+.SuccessQuote .SuccessBox-layerBottom q::after {
+content: url("img/quote-blue.png");
+display: block;
+text-align: right;
+}
+
+.SuccessRow .SuccessIcon {
+width: 33.3%;
+float: left;
+}
+.SuccessIcon {
+box-sizing: border-box;
+width: 6rem;
+}
+
+.SuccessIcon img {
+width: 100%;
+}
+.SuccessIcon .SuccessBox-layerBottom {
+background-image: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-clip: content-box;
+}
+.SuccessRow .SuccessIcon {
+width: 33.3%;
+float: left;
+}
+.SuccessIcon {
+box-sizing: border-box;
+width: 6rem;
+}
+.u-clearfix::after, .ResponsiveNav ul::after, .SuccessGrid::after, .SuccessRow::after {
+content: " ";
+visibility: hidden;
+display: block;
+height: 0;
+clear: both;
+}
+.fix-border-SuccessQuote{
+padding-bottom: 19px;
+}
+
+.SuccessColumn--narrow .SuccessQuote-top q {
+width: 100%;
+}
+.SuccessColumn--narrow .SuccessQuote-bottom img {
+width: 25%;
+}
+.SuccessColumn--narrow .SuccessRow .SuccessIcon {
+width: 50%;
+}
+@media (max-width: 679px){
+.u-screenLarge {
+display: none !important;
+}
+}
+.u-mobileFlip {
+display: flex; 
+flex-direction: column-reverse;
+}
+@media (min-width: 680px){
+.u-mobileFlip {
+display: block;
+}
+}
+
+.button-link-div{
+padding-bottom: 40px;
+ width: 220px; 
+ margin: 0 auto;
+}
 
 /*----------------------------------- FOOTER--------------------------------------------*/
 
