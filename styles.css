@@ -8,9 +8,8 @@ body {
 font-family: 'Open Sans', sans-serif;
 }
 .container {
- width: 940px;
+ width: 900px;
  margin: 0 auto;
-
 }
 h2,h3{
    font-weight: normal;
@@ -29,7 +28,7 @@ float: left;
 }
 header{
     box-shadow: 0 1px 3px 0 grey;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     padding-top: 10px;
     display: block;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
@@ -124,6 +123,9 @@ display: inline-block;
 width: auto;
 float: left;
 }
+.right-header{
+display: inline-block;
+}
 ul.menu li a {
    
     background-color: white;
@@ -140,6 +142,23 @@ ul.menu li a {
     padding: 0 10px;
 }
 
+@media (max-width: 885px){
+ul.menu li a {
+background-color: white;
+text-decoration: none;
+color: #585951;
+padding-left: 8px;
+padding-right: 7px;
+padding-top: 35px;
+text-decoration: none;
+font-size: 10px;
+border-radius: 4px 4px 0 0;
+float: left;
+background-position: left;
+padding: 0 10px;
+}
+}
+
 ul.menu {
     padding-top: 10px;
 }
@@ -148,7 +167,15 @@ ul.menu {
 /*----------------------------------- main---------------------------------*/
 
 
-
+@media (min-width: 750px){
+#section-main {
+background: url("img/slide-bg-complexity.jpg") center center fixed no-repeat;
+height: 600px;
+background-size: cover;
+width: 100%
+ overflow: hidden;
+color: white;
+}
 #section-main {
     background: url("img/slide-bg-complexity.jpg") center center fixed no-repeat;
     height: 600px;
@@ -156,6 +183,8 @@ ul.menu {
     width: 100%
     overflow: hidden;
     color:white;
+
+}
 
 }
 #section-main h2{
@@ -166,36 +195,68 @@ height: 110px;
  
 }
 
-#link-icon, #text-icon, #play-icon {
+#link-icon, #text-icon,#play-icon {
 width: 20px;
 height: 20px;
-margin-top: 70px;
+margin-top: 60px;
 margin-right: 3px;
 padding-bottom: -8px;
 
 }
-
-
-
+ 
 .box-main > a {
 color: #FFF;
 font-weight: 550;
 font-size: 15px;
 }
 
+
+
+
+
+.box-main{
+display: block;
+position: relative;
+box-sizing: border-box;
+width: 100%;
+padding: .5rem 2%;
+margin-bottom: 10px;
+margin-top: 10px;
+min-height: 200px;
+}
+@media (min-width: 750px){
 .box-main {
   border-radius: 10px;
   position: relative;
   height: 180px;
   border-width: 5px;
-  width: 240px;
+  width: 30%;
   opacity: 0.86;
   padding: .5rem 2%;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-right: 30px;
+  margin-right: 2%;
   cursor: pointer;
-  float: left;}
+  float: left;
+}
+}
+
+
+.box-main > h3 {
+font-weight: normal;
+font-size: 20px;
+color: #FFF;
+}
+@media (max-width: 900px){
+.box-main > h3 {
+font-size: 16px;
+}
+}
+@media (max-width: 750px){
+.box-main > h3 {
+font-size: 25px;
+}
+}
 .box-main:hover{
 
   opacity: 1;
@@ -212,14 +273,6 @@ font-size: 15px;
 #third-box-main{
     background-color: #FC6001;
 }
-
-#link-icon, #text-icon, #play-icon {
-width: 20px;
-height: 20px;
-margin-bottom: -5px;
-
-}
-
 
 .carousel-nav li {
 border-radius: 3px;
@@ -255,23 +308,43 @@ height: 50px;
 
 section#solution{
     background: url("img/services-bg.png")  fixed no-repeat;
-    height: 400px;
     background-size:cover;
-    width: 100%
     overflow: hidden;
     text-align: center;
     color: white;
+   width: 100%;
+   margin: 0 auto;
+   min-height: 330px;
+
+}
+
+
+.container-width{
+max-width: 940px;
+width: 100%;
+margin: 0 auto;
 }
 ul.list-sol {
     padding-top: 45px;
-    margin-left: -38px;
+  
+
 }
 
 ul.list-sol li  {
 
 display: inline-block;
+
 }
 
+
+@media (max-width: 750px){
+ul.list-sol li  {
+
+display: inline-block;
+margin-right:3%;
+
+}
+}
 
 .obj-sol > img.inside {
   display: none;
@@ -304,6 +377,14 @@ text-decoration: none;
 padding: 8px 8px;
 max-width: 12em;
 }
+@media (max-width: 750px){
+ 
+.button-link{
+
+visibility: hidden;
+}
+}
+
 
 #section-main .button-link img {
  padding-left:55px; 
@@ -323,11 +404,9 @@ color: #3399CC;
 
 /*----------------------------------- section-content ---------------------------------*/
 
-
 section#section-content   
 {
   background: url("img/news-and-events-bg.jpg") center center fixed no-repeat;
-    height: 400px;
     background-size:  cover;
     width: 100%
     overflow: hidden;
@@ -363,6 +442,7 @@ margin: 0 auto;
 
 .events-list {
 padding-top: 40px;
+padding-bottom: 40px;
 margin: 0 auto;
 margin-left: -38px;
 }
@@ -461,6 +541,11 @@ background: url("img/eventListIconEvents.png") no-repeat;
 margin-left: -176px;
 }
 
+@media (max-width: 750px){
+.events-list > li {
+display: block;
+text-align: center;
+}}
 
 /*----------------------------------- Succsess Stoireds---------------------------------*/
 .Section--success h2 {
@@ -483,14 +568,14 @@ margin: 0 auto;
 }
 
 .SuccessGrid{margin:0 auto;max-width:450px;}
-@media (min-width:680px){.SuccessGrid{max-width:2040px;}}
+@media (min-width:750px){.SuccessGrid{max-width:2040px;}}
 
 .Section--success .SuccessColumn, .Section--success .SuccessColumn--narrow {
 width: 100%;
 float: left;
 }
 
-@media (min-width:680px){.Section--success .SuccessColumn, .Section--success .SuccessColumn--narrow {
+@media (min-width:750px){.Section--success .SuccessColumn, .Section--success .SuccessColumn--narrow {
 width: 37.5%;
 }}
 .Section--success .SuccessColumn--narrow {
@@ -533,7 +618,7 @@ text-overflow: ellipsis;
 overflow: hidden;
 position: relative;
 }
-@media (min-width: 680px){
+@media (min-width: 750px){
 .SuccessQuote-top {
 height: 5.9rem;
 }
@@ -670,7 +755,7 @@ width: 25%;
 .SuccessColumn--narrow .SuccessRow .SuccessIcon {
 width: 50%;
 }
-@media (max-width: 679px){
+@media (max-width: 750px){
 .u-screenLarge {
 display: none !important;
 }
@@ -679,7 +764,7 @@ display: none !important;
 display: flex; 
 flex-direction: column-reverse;
 }
-@media (min-width: 680px){
+@media (min-width: 750px){
 .u-mobileFlip {
 display: block;
 }
