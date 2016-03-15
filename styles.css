@@ -174,7 +174,7 @@ ul.menu {
 
 #section-main {
     background: url("img/slide-bg-complexity.jpg") center center fixed no-repeat;
-    height: 627px;
+    height: 650px;
     background-size:  cover;
     width: 100%
     overflow: hidden;
@@ -187,11 +187,17 @@ padding-top: 35px;
 padding-bottom: 20px;
  
 }
+.hidden-num{
+display:none;
+}
 @media (max-width: 750px){
 .mob-background {
  background: url("img/slide-bg-complexity.jpg") center center no-repeat;
 background-size:  cover;
+}
 
+.hidden-num{
+display: block;
 }
 #section-main {
 height: auto;
@@ -254,7 +260,14 @@ min-height: 200px;
 }
 }
 
+.active {
+background-color: #3399CC;
+}
 
+.notactive{
+  background-color: #e5e5e5;
+
+}
 .box-main > h3 {
 font-weight: normal;
 font-size: 20px;
@@ -265,6 +278,7 @@ color: #FFF;
 font-size: 16px;
 }
 }
+
 .carousel-nav li {
 border-radius: 3px;
 width: 18px;
@@ -280,15 +294,28 @@ margin-right: 6px;
 font-size: 25px;
 width:70%;
 }
+.active {
+background-color: #3399CC;
+}
+
 .carousel-nav li {
 border-radius: 6px;
-width: 30px;
-height: 30px;
 display: inline-block;
 list-style: none;
 text-align: center;
 float: left;
 margin-right: 6px;
+height: 35px;
+width: 35px;
+border-radius: 4px;
+border: 1px solid gray;
+background-color: #E5E5E5;
+font-size: 1.5rem;
+text-align: center;
+line-height: 40px;
+}
+.active {
+background-color: #3399CC;
 }
 
 }
@@ -308,14 +335,7 @@ margin-right: 6px;
 #third-box-main{
     background-color: #FC6001;
 }
-.active {
-background-color: #3399CC;
-}
 
-.notactive{
-  background-color: #e5e5e5;
-
-}
 ol.carousel-nav {
 padding: 0px;
 }
@@ -373,9 +393,9 @@ width: auto;
 }
 .blue-tab {
 padding-left:10px;
-padding-top: 120px;
-height: 30px;
-padding-bottom: 10px;
+padding-top: 100px;
+padding-bottom: 16px;
+height: 40px;
 }
 .container-width{
   margin-bottom: 0px;
@@ -907,7 +927,7 @@ display: none;
 }
 .f-links {
 float: left;
-margin-right: 5px;
+margin-left: 5px;
 width:20%;
 }
 .f-header {
@@ -1033,6 +1053,17 @@ background: url("img/socialMenuIcon-twitter.png") no-repeat;
 #linkedin {
 background: url("img/socialMenuIcon-linkdin.png") no-repeat;
 }
+#youtube:hover {
+  background: url("img/socialMenuIcon-youtube_hover.png") no-repeat;
+}
+
+#twitter:hover {
+  background: url("img/socialMenuIcon-twitter_hover.png") no-repeat;
+}
+
+#linkedin:hover {
+  background: url("img/socialMenuIcon-linkdin_hover.png") no-repeat;
+}
 .icon{
 width: 28px;
 height: 22px;
@@ -1093,16 +1124,22 @@ text-decoration: none;
 .mobile-footer-list {
 display: none;
 }
+.f-menu-mob{
+
+display: none;
+}
 @media (max-width: 750px){
   .f-menu-mob > li {
 list-style: none;
 margin: 4px;
 display: inline-block;
 font-size: 14px;
+
 }
 .f-menu-mob{
 text-align: center;
 background-color: white;
+display: block;
 }
 
 .mobile-footer-list {
