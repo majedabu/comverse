@@ -247,7 +247,7 @@ display: none;
         z-index: 1;
         width: 100%;
         padding: 0;
-
+    overflow: hidden;
     }
 
     .mobile-search-textbox{
@@ -1357,6 +1357,7 @@ display: inline-block;
 }
 .SelectLang
 {
+  background-color: #6D6C6C;
   display: inline-block;
   margin-left:10px;
 }
